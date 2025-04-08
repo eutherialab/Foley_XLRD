@@ -8,9 +8,10 @@ pandas, csv, argparse & sys
 
 **Assessing the conservation of historical, long-term recombination rates.**
 
-First, raw bscorrected recombination rates output from ReLERNN are averaged in 2Mb windows with a 50kb step. Averaging rates in large blocks enables assessments of long-term historical recombination rates as opposed to recent differences that can occur between species, populations, individuals, and between sexes.
+First, raw bscorrected recombination rates output from ReLERNN are averaged in 2Mb windows with a 50kb step. Averaging rates in large blocks enables assessments of long-term historical recombination rates as opposed to recent differences that can occur between species, populations, individuals, and sexes.
 
 Run as 
+
 _perl relernn_sliding_average.pl_
 
 replace DATAFILE with the raw bscorrected output from ReLERNN. As written, the script averages recombination rates in 2Mb blocks with a step of 50kb. Change hard-coded numbers as required to vary block and window size.
