@@ -20,7 +20,7 @@ replace DATAFILE with the raw bscorrected output from ReLERNN. As written, the s
 
 The raw output omits windows for which there was insufficient data to infer a recombination rate. Therefore, data cannot be plotted directly and must be put back into its genomic context. This is achieved in two steps. First, taking a bedfile of chromosome names and lengths (RecombRates2genome_SampleBed.bed), a whole-genome bedfile comprising coordinates for 50kb windows is generated using
 
-_bash makeFullGenomeBedFile.sh _
+_bash makeFullGenomeBedFile.sh_
 
 Then run 
 
